@@ -37,8 +37,8 @@ function isAdult(age) {
   }
 }
 
-console.log("Exercise 2 Result:", isAdult(21)) // This should print 'Adult'
-console.log("Exercise 2 Result:", isAdult(16)) // This should print 'Minor'
+console.log("Exercise 2 Result:", isAdult(21))
+console.log("Exercise 2 Result:", isAdult(16))
 
 /*
 Exercise 3: isCharAVowel()
@@ -52,15 +52,6 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-
-function isCharAVowel(char) {
-  // Convert the character to lowercase to handle both upper and lower case letters
-  char = char.toLowerCase()
-  // Check if the character is one of the vowels
-  return ["a", "e", "i", "o", "u"].includes(char)
-}
-
-console.log("Exercise 3 Result:", isCharAVowel("a")) // This should print true
 
 /*
 Exercise 4: generateEmail()
@@ -80,8 +71,7 @@ function generateEmail(name, domain) {
   return name + "@" + domain
 }
 
-console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com")) // This should print 'johnsmith@example.com'
-
+console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"))
 /*
 Exercise 5: greetUser()
 
@@ -100,7 +90,7 @@ function greetUser(name, timeOfDay) {
   return "Good " + timeOfDay + ", " + name + "!"
 }
 
-console.log("Exercise 5 Result:", greetUser("Sam", "morning")) // This should print "Good morning, Sam!"
+console.log("Exercise 5 Result:", greetUser("Sam", "morning"))
 
 /*
 Exercise 6: maxOfThree()
@@ -125,7 +115,7 @@ function maxOfThree(num1, num2, num3) {
   }
 }
 
-console.log("Exercise 6 Result:", maxOfThree(5, 10, 8)) // This should print 10
+console.log("Exercise 6 Result:", maxOfThree(5, 10, 8))
 
 /*
 Exercise 7: calculateTip()
@@ -142,11 +132,10 @@ Complete the exercise in the space below:
 console.log("Exercise 7 Result:", calculateTip(50, 20))
 
 function calculateTip(billAmount, tipPercentage) {
-  //return (billAmount * tipPercentage) / 100
   return billAmount * 0.2
 }
 
-console.log("Exercise 7 Result:", calculateTip(50, 20)) // This should print 10
+console.log("Exercise 7 Result:", calculateTip(50, 20))
 
 /*
 Exercise 8: convertTemperature()
@@ -163,14 +152,9 @@ Complete the exercise in the space below:
 */
 
 console.log("Exercise 8 Result:", convertTemperature(32, "C"))
-// convert from C to F
-//formula (0 C *9/5)+ 32F
-//convert from F to C
-//formula (F -32 * 5/9)
 
 function convertTemperature(temperature, scale) {
   if (scale === "C") {
-    // Convert Celsius to Fahrenheit
     return (temperature * 9) / 5 + 32
   } else if (scale === "F") {
     // Convert Fahrenheit to Celsius
@@ -180,8 +164,8 @@ function convertTemperature(temperature, scale) {
   }
 }
 
-console.log("Exercise 8 Result:", convertTemperature(32, "C")) // This should print 89.6 (Celsius to Fahrenheit)
-console.log("Exercise 8 Result:", convertTemperature(32, "F")) // This should print 0 (Fahrenheit to Celsius)
+console.log("Exercise 8 Result:", convertTemperature(32, "C"))
+console.log("Exercise 8 Result:", convertTemperature(32, "F"))
 
 /*
 Exercise 9: basicCalculator()
@@ -220,11 +204,10 @@ function basicCalculator(num1, num2, operation) {
   }
 }
 
-// Test the function
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract")) // Should return 5
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply")) // Should return 50
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide")) // Should return 2
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "add")) // Should return 15
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"))
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply"))
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide"))
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"))
 
 /*
 level up: Exercise 10: calculateGrade()
@@ -241,8 +224,6 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-//console.log("Exercise 10 Result:", calculateGrade(85)) // this should return B
-
 function calculateGrade(score) {
   if (score >= 90) {
     return "A"
@@ -257,39 +238,4 @@ function calculateGrade(score) {
   }
 }
 
-// Test the function
-console.log("Exercise 10 Result:", calculateGrade(85)) // Should return 'B'
-
-/*
-level up: Exercise 11: createUsername()
-
-Define a function called createUsername. 
-It should take a first name and a last name and return a username. 
-
-The username should be a combination of the following:
-- The first three letters of the first name.
-- The first three letters of the last name.
-- The total character count of the first and last name combined.
-
-Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
-
-Complete the exercise in the space below:
-*/
-
-//console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
-function createUsername(firstName, lastName) {
-  // Get the first three letters of the first and last names
-  const firstPart = firstName.slice(0, 3)
-  const lastPart = lastName.slice(0, 3)
-
-  // Calculate the total character count of the combined names
-  const totalLength = firstName.length + lastName.length
-
-  // Combine to create the username
-  return firstPart + lastPart + totalLength
-}
-
-// Test the function
-console.log("Exercise 11 Result:", createUsername("Samantha", "Green")) // Should return 'SamGre13'
-
-// the End :)
+console.log("Exercise 10 Result:", calculateGrade(85))
